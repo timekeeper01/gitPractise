@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
-    <EditText
-        android:id="@+id/content_et"
-        android:layout_width="match_parent"
+    tools:context=".VideoPlayerActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/current_status_tv"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="请输入短信内容"
+        android:layout_centerInParent="true"
+        android:text="正在播放精彩的电影"
         android:textSize="30sp"/>
     <Button
-        android:id="@+id/send_btn"
-        android:layout_width="match_parent"
+        android:id="@+id/player_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发送"/>
+        android:text="播放"
+        android:textSize="30sp"/>
 
 </LinearLayout>
